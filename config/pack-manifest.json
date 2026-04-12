@@ -27,16 +27,6 @@
           "name": "using-git-worktrees",
           "sourceRepo": "superpowers",
           "sourcePath": "skills/using-git-worktrees"
-        },
-        {
-          "name": "file-organizer",
-          "sourceRepo": "antigravity-awesome-skills",
-          "sourcePath": "skills/file-organizer"
-        },
-        {
-          "name": "skill-creator",
-          "sourceRepo": "anthropic-skills",
-          "sourcePath": "skills/skill-creator"
         }
       ]
     },
@@ -92,16 +82,16 @@
           "name": "python-pro",
           "sourceRepo": "antigravity-awesome-skills",
           "sourcePath": "skills/python-pro"
-        },
+        }
+      ]
+    },
+    {
+      "name": "devops-platform",
+      "skills": [
         {
           "name": "docker-expert",
           "sourceRepo": "antigravity-awesome-skills",
           "sourcePath": "skills/docker-expert"
-        },
-        {
-          "name": "debugging-strategies",
-          "sourceRepo": "antigravity-awesome-skills",
-          "sourcePath": "skills/debugging-strategies"
         }
       ]
     },
@@ -156,8 +146,29 @@
       ]
     },
     {
+      "name": "meta-tools",
+      "skills": [
+        {
+          "name": "file-organizer",
+          "sourceRepo": "antigravity-awesome-skills",
+          "sourcePath": "skills/file-organizer"
+        },
+        {
+          "name": "skill-creator",
+          "sourceRepo": "anthropic-skills",
+          "sourcePath": "skills/skill-creator"
+        }
+      ]
+    },
+    {
       "name": "archive",
-      "skills": []
+      "skills": [
+        {
+          "name": "debugging-strategies",
+          "sourceRepo": "antigravity-awesome-skills",
+          "sourcePath": "skills/debugging-strategies"
+        }
+      ]
     }
   ]
 }

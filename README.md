@@ -25,9 +25,11 @@ The intended model is:
 - `docs-writing`: documentation and writing support
 - `frontend-web`: web/frontend work
 - `python-backend`: Python service work
+- `devops-platform`: Docker and operational platform work
 - `database-api`: database and API skills
 - `flutter-mobile`: Flutter and mobile work
 - `agent-systems`: advanced multi-agent or memory/orchestration skills
+- `meta-tools`: infrequent maintenance and skill-authoring tools
 - `archive`: retired or superseded skills kept temporarily for reference
 
 Typical target size per project:
@@ -60,9 +62,11 @@ skillpacks/
     ├── docs-writing/
     ├── frontend-web/
     ├── python-backend/
+    ├── devops-platform/
     ├── database-api/
     ├── flutter-mobile/
     ├── agent-systems/
+    ├── meta-tools/
     ├── archive/
     └── skillshare/
 ```

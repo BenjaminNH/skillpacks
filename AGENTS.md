@@ -60,9 +60,11 @@ skillpacks/
     ├── docs-writing/
     ├── frontend-web/
     ├── python-backend/
+    ├── devops-platform/
     ├── database-api/
     ├── flutter-mobile/
     ├── agent-systems/
+    ├── meta-tools/
     ├── archive/
     └── skillshare/
 ```
@@ -268,8 +270,6 @@ At the moment the generated packs are intended to look like this:
   - `systematic-debugging`
   - `test-driven-development`
   - `using-git-worktrees`
-  - `file-organizer`
-  - `skill-creator`
 
 - `quality-review`
   - `code-reviewer`
@@ -285,8 +285,9 @@ At the moment the generated packs are intended to look like this:
 
 - `python-backend`
   - `python-pro`
+
+- `devops-platform`
   - `docker-expert`
-  - `debugging-strategies`
 
 - `database-api`
   - `database-design`
@@ -301,6 +302,13 @@ At the moment the generated packs are intended to look like this:
   - `agent-memory-systems`
   - `agent-orchestration-multi-agent-optimize`
 
+- `meta-tools`
+  - `file-organizer`
+  - `skill-creator`
+
+- `archive`
+  - `debugging-strategies`
+
 These may change, but if they do, keep `config/pack-manifest.json` as the source of truth.
 
 ## Pack Design Intent
@@ -314,9 +322,11 @@ Main pack families:
 - `docs-writing`
 - `frontend-web`
 - `python-backend`
+- `devops-platform`
 - `database-api`
 - `flutter-mobile`
 - `agent-systems`
+- `meta-tools`
 - `archive`
 
 The user prefers small practical pack combinations rather than giant universal libraries.

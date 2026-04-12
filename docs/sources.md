@@ -102,8 +102,6 @@ This is the current high-level mapping from upstreams into local packs.
 - `systematic-debugging` -> `superpowers`
 - `test-driven-development` -> `superpowers`
 - `using-git-worktrees` -> `superpowers`
-- `file-organizer` -> `antigravity-awesome-skills`
-- `skill-creator` -> `anthropic-skills`
 
 ### quality-review
 
@@ -123,8 +121,10 @@ This is the current high-level mapping from upstreams into local packs.
 ### python-backend
 
 - `python-pro` -> `antigravity-awesome-skills`
+
+### devops-platform
+
 - `docker-expert` -> `antigravity-awesome-skills`
-- `debugging-strategies` -> `antigravity-awesome-skills`
 
 ### database-api
 
@@ -142,9 +142,14 @@ This is the current high-level mapping from upstreams into local packs.
 - `agent-memory-systems` -> `antigravity-awesome-skills`
 - `agent-orchestration-multi-agent-optimize` -> `antigravity-awesome-skills`
 
-### currently empty packs
+### meta-tools
 
-- `archive`
+- `file-organizer` -> `antigravity-awesome-skills`
+- `skill-creator` -> `anthropic-skills`
+
+### archive
+
+- `debugging-strategies` -> `antigravity-awesome-skills`
 
 ## When To Update This File
 
