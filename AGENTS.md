@@ -190,6 +190,7 @@ Defaults:
 - default project targets are `codex,cursor`
 - copy each skill in the selected pack into the project's `.skillshare/skills/`
 - run project-level `skillshare sync` after installation
+- when checking project status manually, prefer `skillshare status -p` to avoid relying on auto-detection
 
 Interpretation rule for future sessions:
 
