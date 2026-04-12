@@ -9,6 +9,11 @@
           "sourcePath": "skills/brainstorming"
         },
         {
+          "name": "writing-plans",
+          "sourceRepo": "superpowers",
+          "sourcePath": "skills/writing-plans"
+        },
+        {
           "name": "systematic-debugging",
           "sourceRepo": "superpowers",
           "sourcePath": "skills/systematic-debugging"
@@ -72,6 +77,11 @@
           "name": "tailwind-design-system",
           "sourceRepo": "wshobson-agents",
           "sourcePath": "plugins/frontend-mobile-development/skills/tailwind-design-system"
+        },
+        {
+          "name": "typescript-expert",
+          "sourceRepo": "antigravity-awesome-skills",
+          "sourcePath": "skills/typescript-expert"
         }
       ]
     },
@@ -87,12 +97,28 @@
           "name": "docker-expert",
           "sourceRepo": "antigravity-awesome-skills",
           "sourcePath": "skills/docker-expert"
+        },
+        {
+          "name": "debugging-strategies",
+          "sourceRepo": "antigravity-awesome-skills",
+          "sourcePath": "skills/debugging-strategies"
         }
       ]
     },
     {
       "name": "database-api",
-      "skills": []
+      "skills": [
+        {
+          "name": "database-design",
+          "sourceRepo": "antigravity-awesome-skills",
+          "sourcePath": "skills/database-design"
+        },
+        {
+          "name": "api-patterns",
+          "sourceRepo": "antigravity-awesome-skills",
+          "sourcePath": "skills/api-patterns"
+        }
+      ]
     },
     {
       "name": "flutter-mobile",
@@ -116,7 +142,18 @@
     },
     {
       "name": "agent-systems",
-      "skills": []
+      "skills": [
+        {
+          "name": "agent-memory-systems",
+          "sourceRepo": "antigravity-awesome-skills",
+          "sourcePath": "skills/agent-memory-systems"
+        },
+        {
+          "name": "agent-orchestration-multi-agent-optimize",
+          "sourceRepo": "antigravity-awesome-skills",
+          "sourcePath": "skills/agent-orchestration-multi-agent-optimize"
+        }
+      ]
     },
     {
       "name": "archive",

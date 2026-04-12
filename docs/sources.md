@@ -98,6 +98,7 @@ This is the current high-level mapping from upstreams into local packs.
 ### workflow-core
 
 - `brainstorming` -> `superpowers`
+- `writing-plans` -> `superpowers`
 - `systematic-debugging` -> `superpowers`
 - `test-driven-development` -> `superpowers`
 - `using-git-worktrees` -> `superpowers`
@@ -117,11 +118,18 @@ This is the current high-level mapping from upstreams into local packs.
 - `frontend-developer` -> `antigravity-awesome-skills`
 - `react-best-practices` -> `antigravity-awesome-skills`
 - `tailwind-design-system` -> `wshobson-agents`
+- `typescript-expert` -> `antigravity-awesome-skills`
 
 ### python-backend
 
 - `python-pro` -> `antigravity-awesome-skills`
 - `docker-expert` -> `antigravity-awesome-skills`
+- `debugging-strategies` -> `antigravity-awesome-skills`
+
+### database-api
+
+- `database-design` -> `antigravity-awesome-skills`
+- `api-patterns` -> `antigravity-awesome-skills`
 
 ### flutter-mobile
 
@@ -129,10 +137,13 @@ This is the current high-level mapping from upstreams into local packs.
 - `mobile-developer` -> `antigravity-awesome-skills`
 - `mobile-design` -> `antigravity-awesome-skills`
 
+### agent-systems
+
+- `agent-memory-systems` -> `antigravity-awesome-skills`
+- `agent-orchestration-multi-agent-optimize` -> `antigravity-awesome-skills`
+
 ### currently empty packs
 
-- `database-api`
-- `agent-systems`
 - `archive`
 
 ## When To Update This File

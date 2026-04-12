@@ -263,6 +263,7 @@ At the moment the generated packs are intended to look like this:
 
 - `workflow-core`
   - `brainstorming`
+  - `writing-plans`
   - `systematic-debugging`
   - `test-driven-development`
   - `using-git-worktrees`
@@ -279,15 +280,25 @@ At the moment the generated packs are intended to look like this:
   - `frontend-developer`
   - `react-best-practices`
   - `tailwind-design-system`
+  - `typescript-expert`
 
 - `python-backend`
   - `python-pro`
   - `docker-expert`
+  - `debugging-strategies`
+
+- `database-api`
+  - `database-design`
+  - `api-patterns`
 
 - `flutter-mobile`
   - `flutter-expert`
   - `mobile-developer`
   - `mobile-design`
+
+- `agent-systems`
+  - `agent-memory-systems`
+  - `agent-orchestration-multi-agent-optimize`
 
 These may change, but if they do, keep `config/pack-manifest.json` as the source of truth.
 
