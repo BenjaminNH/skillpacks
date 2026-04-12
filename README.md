@@ -111,6 +111,14 @@ Sync generated packs to local AI tools:
 skillshare sync --force
 ```
 
+Install one or more packs into a specific project:
+
+```powershell
+.\scripts\install-project-packs.ps1 -ProjectPath "D:\path\to\project" -Packs workflow-core,python-backend
+```
+
+This initializes project-mode `skillshare` when needed, copies the selected pack skills into the project's `.skillshare/skills/`, and then syncs to project-level targets.
+
 ## Operational Rules
 
 - Do not sync `upstreams/` directly.

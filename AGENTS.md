@@ -172,6 +172,31 @@ Use `skillshare status` first if needed:
 skillshare status
 ```
 
+### 3a. Install Packs Into A Project
+
+When the user wants pack-based skills added to a specific project, do not change the global target sync rules.
+
+Use project mode instead.
+
+Preferred command:
+
+```powershell
+.\scripts\install-project-packs.ps1 -ProjectPath "<project-path>" -Packs workflow-core,python-backend
+```
+
+Defaults:
+
+- if the project does not already have `.skillshare/config.yaml`, initialize it in project mode
+- default project targets are `codex,cursor`
+- copy each skill in the selected pack into the project's `.skillshare/skills/`
+- run project-level `skillshare sync` after installation
+
+Interpretation rule for future sessions:
+
+- if the user says "add `python-backend` and `frontend-web` skills to project X"
+- interpret that as "copy all current skills from those packs into project X's `.skillshare/skills/`, then sync using project-mode skillshare"
+- do not globally sync those packs to all tools
+
 ### 4. Add A Skill To A Pack
 
 Preferred process:
@@ -199,6 +224,23 @@ Preferred process:
 1. move the skill entry to the new pack in `config/pack-manifest.json`
 2. rebuild packs
 3. sync targets
+
+### 7. Add Packs To A Project From Natural Language
+
+If the user gives a request like:
+
+- "in `<path>` add `python-backend` skills"
+- "for this repo install `workflow-core` and `frontend-web`"
+- "sync the Flutter pack into this project"
+
+future agents should:
+
+1. resolve the project path
+2. verify the pack names exist under `skills/`
+3. use `scripts/install-project-packs.ps1`
+4. report which skills were copied into the project and synced
+
+If the user does not specify targets and the project is not initialized yet, use the script defaults: `codex,cursor`.
 
 ## When Local Customization Is Allowed
 
