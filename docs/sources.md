@@ -1,0 +1,145 @@
+# Sources
+
+This document records the upstream repositories tracked by this repository and how they relate to the generated local packs.
+
+The repository uses a two-layer model:
+
+- `upstreams/`: git-tracked source repositories kept locally for updates and provenance
+- `skills/`: generated local pack layer synced by `skillshare`
+
+The current repository strategy assumes most imported skills stay unmodified. Because of that, pack membership is managed through `config/pack-manifest.json`, and selected skill directories are copied from `upstreams/` into `skills/`.
+
+## Rules
+
+- Upstream repositories are discovery and update sources, not the direct sync layer.
+- Upstream clones stay in `upstreams/`.
+- Generated pack contents stay in `skills/`.
+- `config/pack-manifest.json` is the source of truth for pack membership.
+- Do not sync `upstreams/` directly with `skillshare`.
+- If a skill becomes heavily customized later, document that exception explicitly.
+
+## Update Workflow
+
+Refresh tracked upstream repositories:
+
+```powershell
+.\scripts\update-upstreams.ps1
+```
+
+Rebuild local packs from the manifest:
+
+```powershell
+.\scripts\sync-packs-from-upstreams.ps1
+```
+
+Sync generated packs to configured AI tool targets:
+
+```powershell
+skillshare sync --force
+```
+
+## Current Tracked Upstreams
+
+### sickn33/antigravity-awesome-skills
+
+- Local path: `upstreams/antigravity-awesome-skills`
+- URL: <https://github.com/sickn33/antigravity-awesome-skills>
+- Role:
+  - large discovery source
+  - historical parent of the user's older mixed skill collection
+- Notes:
+  - used for many practical general-purpose skills in the current packs
+  - too large to mirror wholesale into the sync layer
+
+### anthropics/skills
+
+- Local path: `upstreams/anthropic-skills`
+- URL: <https://github.com/anthropics/skills>
+- Role:
+  - official baseline skill source
+  - preferred source when an official skill exists and local customization is not needed
+- Notes:
+  - currently used for `skill-creator`
+
+### obra/superpowers
+
+- Local path: `upstreams/superpowers`
+- URL: <https://github.com/obra/superpowers>
+- Role:
+  - workflow and engineering-process skills
+- Notes:
+  - preferred source for planning, debugging, TDD, and worktree workflow skills
+  - currently used for the core workflow pack items
+
+### wshobson/agents
+
+- Local path: `upstreams/wshobson-agents`
+- URL: <https://github.com/wshobson/agents>
+- Role:
+  - engineering and architecture discovery source
+- Notes:
+  - useful for backend, architecture, and frontend/mobile support skills
+  - currently used for `tailwind-design-system`
+
+### coreyhaines31/marketingskills
+
+- Local path: `upstreams/marketingskills`
+- URL: <https://github.com/coreyhaines31/marketingskills>
+- Role:
+  - marketing and growth discovery source
+- Notes:
+  - tracked for future optional packs
+  - not currently used in the first active generated packs
+
+## Current Pack Provenance Summary
+
+This is the current high-level mapping from upstreams into local packs.
+
+### workflow-core
+
+- `brainstorming` -> `superpowers`
+- `systematic-debugging` -> `superpowers`
+- `test-driven-development` -> `superpowers`
+- `using-git-worktrees` -> `superpowers`
+- `file-organizer` -> `antigravity-awesome-skills`
+- `skill-creator` -> `anthropic-skills`
+
+### quality-review
+
+- `code-reviewer` -> `antigravity-awesome-skills`
+
+### docs-writing
+
+- `readme` -> `antigravity-awesome-skills`
+
+### frontend-web
+
+- `frontend-developer` -> `antigravity-awesome-skills`
+- `react-best-practices` -> `antigravity-awesome-skills`
+- `tailwind-design-system` -> `wshobson-agents`
+
+### python-backend
+
+- `python-pro` -> `antigravity-awesome-skills`
+- `docker-expert` -> `antigravity-awesome-skills`
+
+### flutter-mobile
+
+- `flutter-expert` -> `antigravity-awesome-skills`
+- `mobile-developer` -> `antigravity-awesome-skills`
+- `mobile-design` -> `antigravity-awesome-skills`
+
+### currently empty packs
+
+- `database-api`
+- `agent-systems`
+- `archive`
+
+## When To Update This File
+
+Update this file when:
+
+- a new upstream repository is added
+- an existing upstream changes role significantly
+- the pack strategy changes
+- heavily customized local skills are introduced and no longer fit the generated-copy model

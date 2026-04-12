@@ -1,0 +1,6 @@
+upstreams/*
+!upstreams/README.md
+!upstreams/manifest.json
+skills/.metadata.json
+tmp/
+Thumbs.db

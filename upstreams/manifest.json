@@ -1,0 +1,34 @@
+{
+  "repos": [
+    {
+      "name": "antigravity-awesome-skills",
+      "repo": "sickn33/antigravity-awesome-skills",
+      "url": "https://github.com/sickn33/antigravity-awesome-skills.git",
+      "path": "upstreams/antigravity-awesome-skills"
+    },
+    {
+      "name": "anthropic-skills",
+      "repo": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills.git",
+      "path": "upstreams/anthropic-skills"
+    },
+    {
+      "name": "superpowers",
+      "repo": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers.git",
+      "path": "upstreams/superpowers"
+    },
+    {
+      "name": "wshobson-agents",
+      "repo": "wshobson/agents",
+      "url": "https://github.com/wshobson/agents.git",
+      "path": "upstreams/wshobson-agents"
+    },
+    {
+      "name": "marketingskills",
+      "repo": "coreyhaines31/marketingskills",
+      "url": "https://github.com/coreyhaines31/marketingskills.git",
+      "path": "upstreams/marketingskills"
+    }
+  ]
+}

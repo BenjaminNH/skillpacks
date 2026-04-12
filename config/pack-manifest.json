@@ -1,0 +1,126 @@
+{
+  "packs": [
+    {
+      "name": "workflow-core",
+      "skills": [
+        {
+          "name": "brainstorming",
+          "sourceRepo": "superpowers",
+          "sourcePath": "skills/brainstorming"
+        },
+        {
+          "name": "systematic-debugging",
+          "sourceRepo": "superpowers",
+          "sourcePath": "skills/systematic-debugging"
+        },
+        {
+          "name": "test-driven-development",
+          "sourceRepo": "superpowers",
+          "sourcePath": "skills/test-driven-development"
+        },
+        {
+          "name": "using-git-worktrees",
+          "sourceRepo": "superpowers",
+          "sourcePath": "skills/using-git-worktrees"
+        },
+        {
+          "name": "file-organizer",
+          "sourceRepo": "antigravity-awesome-skills",
+          "sourcePath": "skills/file-organizer"
+        },
+        {
+          "name": "skill-creator",
+          "sourceRepo": "anthropic-skills",
+          "sourcePath": "skills/skill-creator"
+        }
+      ]
+    },
+    {
+      "name": "quality-review",
+      "skills": [
+        {
+          "name": "code-reviewer",
+          "sourceRepo": "antigravity-awesome-skills",
+          "sourcePath": "skills/code-reviewer"
+        }
+      ]
+    },
+    {
+      "name": "docs-writing",
+      "skills": [
+        {
+          "name": "readme",
+          "sourceRepo": "antigravity-awesome-skills",
+          "sourcePath": "skills/readme"
+        }
+      ]
+    },
+    {
+      "name": "frontend-web",
+      "skills": [
+        {
+          "name": "frontend-developer",
+          "sourceRepo": "antigravity-awesome-skills",
+          "sourcePath": "skills/frontend-developer"
+        },
+        {
+          "name": "react-best-practices",
+          "sourceRepo": "antigravity-awesome-skills",
+          "sourcePath": "skills/react-best-practices"
+        },
+        {
+          "name": "tailwind-design-system",
+          "sourceRepo": "wshobson-agents",
+          "sourcePath": "plugins/frontend-mobile-development/skills/tailwind-design-system"
+        }
+      ]
+    },
+    {
+      "name": "python-backend",
+      "skills": [
+        {
+          "name": "python-pro",
+          "sourceRepo": "antigravity-awesome-skills",
+          "sourcePath": "skills/python-pro"
+        },
+        {
+          "name": "docker-expert",
+          "sourceRepo": "antigravity-awesome-skills",
+          "sourcePath": "skills/docker-expert"
+        }
+      ]
+    },
+    {
+      "name": "database-api",
+      "skills": []
+    },
+    {
+      "name": "flutter-mobile",
+      "skills": [
+        {
+          "name": "flutter-expert",
+          "sourceRepo": "antigravity-awesome-skills",
+          "sourcePath": "skills/flutter-expert"
+        },
+        {
+          "name": "mobile-developer",
+          "sourceRepo": "antigravity-awesome-skills",
+          "sourcePath": "skills/mobile-developer"
+        },
+        {
+          "name": "mobile-design",
+          "sourceRepo": "antigravity-awesome-skills",
+          "sourcePath": "skills/mobile-design"
+        }
+      ]
+    },
+    {
+      "name": "agent-systems",
+      "skills": []
+    },
+    {
+      "name": "archive",
+      "skills": []
+    }
+  ]
+}
