@@ -189,7 +189,7 @@ Preferred command:
 Defaults:
 
 - if the project does not already have `.skillshare/config.yaml`, initialize it in project mode
-- default project targets are `codex,cursor`
+- default project targets are `codex`
 - copy each skill in the selected pack into the project's `.skillshare/skills/`
 - run project-level `skillshare sync` after installation
 - when checking project status manually, prefer `skillshare status -p` to avoid relying on auto-detection
@@ -243,7 +243,7 @@ future agents should:
 3. use `scripts/install-project-packs.ps1`
 4. report which skills were copied into the project and synced
 
-If the user does not specify targets and the project is not initialized yet, use the script defaults: `codex,cursor`.
+If the user does not specify targets and the project is not initialized yet, use the script defaults: `codex`.
 
 ## When Local Customization Is Allowed
 

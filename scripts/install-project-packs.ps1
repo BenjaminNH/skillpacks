@@ -5,7 +5,7 @@ param(
     [Parameter(Mandatory = $true)]
     [string[]]$Packs,
 
-    [string[]]$Targets = @("codex", "cursor")
+    [string[]]$Targets = @("codex")
 )
 
 $ErrorActionPreference = "Stop"
