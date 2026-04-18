@@ -29,6 +29,8 @@ The intended model is:
 - `database-api`: database and API skills
 - `flutter-mobile`: Flutter and mobile work
 - `agent-systems`: advanced multi-agent or memory/orchestration skills
+- `sales-marketing`: customer research, pricing, sales assets, and repeat-purchase marketing
+- `toc-validation`: TOC idea validation, pricing, launch, and low-cost growth
 - `meta-tools`: infrequent maintenance and skill-authoring tools
 - `archive`: retired or superseded skills kept temporarily for reference
 
@@ -66,6 +68,8 @@ skillpacks/
     ├── database-api/
     ├── flutter-mobile/
     ├── agent-systems/
+    ├── sales-marketing/
+    ├── toc-validation/
     ├── meta-tools/
     ├── archive/
     └── skillshare/

@@ -64,6 +64,8 @@ skillpacks/
     ├── database-api/
     ├── flutter-mobile/
     ├── agent-systems/
+    ├── sales-marketing/
+    ├── toc-validation/
     ├── meta-tools/
     ├── archive/
     └── skillshare/
@@ -302,6 +304,18 @@ At the moment the generated packs are intended to look like this:
   - `agent-memory-systems`
   - `agent-orchestration-multi-agent-optimize`
 
+- `sales-marketing`
+  - `customer-research`
+  - `pricing-strategy`
+  - `sales-enablement`
+  - `community-marketing`
+
+- `toc-validation`
+  - `customer-research`
+  - `pricing-strategy`
+  - `launch-strategy`
+  - `social-content`
+
 - `meta-tools`
   - `file-organizer`
   - `skill-creator`
@@ -326,6 +340,8 @@ Main pack families:
 - `database-api`
 - `flutter-mobile`
 - `agent-systems`
+- `sales-marketing`
+- `toc-validation`
 - `meta-tools`
 - `archive`
 

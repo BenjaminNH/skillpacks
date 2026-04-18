@@ -142,6 +142,20 @@ This is the current high-level mapping from upstreams into local packs.
 - `agent-memory-systems` -> `antigravity-awesome-skills`
 - `agent-orchestration-multi-agent-optimize` -> `antigravity-awesome-skills`
 
+### sales-marketing
+
+- `customer-research` -> `marketingskills`
+- `pricing-strategy` -> `marketingskills`
+- `sales-enablement` -> `marketingskills`
+- `community-marketing` -> `marketingskills`
+
+### toc-validation
+
+- `customer-research` -> `marketingskills`
+- `pricing-strategy` -> `marketingskills`
+- `launch-strategy` -> `marketingskills`
+- `social-content` -> `marketingskills`
+
 ### meta-tools
 
 - `file-organizer` -> `antigravity-awesome-skills`

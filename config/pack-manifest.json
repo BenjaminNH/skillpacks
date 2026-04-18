@@ -146,6 +146,56 @@
       ]
     },
     {
+      "name": "sales-marketing",
+      "skills": [
+        {
+          "name": "customer-research",
+          "sourceRepo": "marketingskills",
+          "sourcePath": "skills/customer-research"
+        },
+        {
+          "name": "pricing-strategy",
+          "sourceRepo": "marketingskills",
+          "sourcePath": "skills/pricing-strategy"
+        },
+        {
+          "name": "sales-enablement",
+          "sourceRepo": "marketingskills",
+          "sourcePath": "skills/sales-enablement"
+        },
+        {
+          "name": "community-marketing",
+          "sourceRepo": "marketingskills",
+          "sourcePath": "skills/community-marketing"
+        }
+      ]
+    },
+    {
+      "name": "toc-validation",
+      "skills": [
+        {
+          "name": "customer-research",
+          "sourceRepo": "marketingskills",
+          "sourcePath": "skills/customer-research"
+        },
+        {
+          "name": "pricing-strategy",
+          "sourceRepo": "marketingskills",
+          "sourcePath": "skills/pricing-strategy"
+        },
+        {
+          "name": "launch-strategy",
+          "sourceRepo": "marketingskills",
+          "sourcePath": "skills/launch-strategy"
+        },
+        {
+          "name": "social-content",
+          "sourceRepo": "marketingskills",
+          "sourcePath": "skills/social-content"
+        }
+      ]
+    },
+    {
       "name": "meta-tools",
       "skills": [
         {
