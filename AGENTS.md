@@ -193,8 +193,17 @@ Defaults:
 - if the project does not already have `.skillshare/config.yaml`, initialize it in project mode
 - default project targets are `codex`
 - copy each skill in the selected pack into the project's `.skillshare/skills/`
+- track managed packs in `.skillshare/skillpacks.json`
 - run project-level `skillshare sync` after installation
 - when checking project status manually, prefer `skillshare status -p` to avoid relying on auto-detection
+
+To remove packs from a project:
+
+```powershell
+.\scripts\install-project-packs.ps1 -ProjectPath "<project-path>" -Packs workflow-core -Remove
+```
+
+Removal should only delete skills that are no longer required by any remaining managed pack in `.skillshare/skillpacks.json`.
 
 Interpretation rule for future sessions:
 
@@ -246,6 +255,13 @@ future agents should:
 4. report which skills were copied into the project and synced
 
 If the user does not specify targets and the project is not initialized yet, use the script defaults: `codex`.
+
+If the user asks to remove a pack from a project:
+
+1. resolve the project path
+2. verify the pack names exist under `skills/`
+3. use `scripts/install-project-packs.ps1 -Remove`
+4. report which skills were removed and which shared skills were retained
 
 ## When Local Customization Is Allowed
 

@@ -127,6 +127,14 @@ Install one or more packs into a specific project:
 
 This initializes project-mode `skillshare` when needed, copies the selected pack skills into the project's `.skillshare/skills/`, and then syncs to project-level targets.
 
+Remove one or more packs from a specific project:
+
+```powershell
+.\scripts\install-project-packs.ps1 -ProjectPath "D:\path\to\project" -Packs workflow-core -Remove
+```
+
+Project-level pack state is tracked in `.skillshare/skillpacks.json`, so removing a pack only deletes skills that are no longer needed by any remaining managed pack.
+
 ## Operational Rules
 
 - Do not sync `upstreams/` directly.
