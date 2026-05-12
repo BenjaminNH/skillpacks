@@ -31,6 +31,7 @@ The intended model is:
 - `agent-systems`: advanced multi-agent or memory/orchestration skills
 - `sales-marketing`: customer research, pricing, sales assets, and repeat-purchase marketing
 - `toc-validation`: TOC idea validation, pricing, launch, and low-cost growth
+- `social-video-growth`: short-form social launch, content, and paid validation
 - `meta-tools`: infrequent maintenance and skill-authoring tools
 - `archive`: retired or superseded skills kept temporarily for reference
 
@@ -70,6 +71,7 @@ skillpacks/
     ├── agent-systems/
     ├── sales-marketing/
     ├── toc-validation/
+    ├── social-video-growth/
     ├── meta-tools/
     ├── archive/
     └── skillshare/

@@ -66,6 +66,7 @@ skillpacks/
     ├── agent-systems/
     ├── sales-marketing/
     ├── toc-validation/
+    ├── social-video-growth/
     ├── meta-tools/
     ├── archive/
     └── skillshare/
@@ -332,6 +333,15 @@ At the moment the generated packs are intended to look like this:
   - `launch-strategy`
   - `social-content`
 
+- `social-video-growth`
+  - `product-marketing-context`
+  - `customer-research`
+  - `content-strategy`
+  - `social-content`
+  - `copywriting`
+  - `paid-ads`
+  - `launch-strategy`
+
 - `meta-tools`
   - `file-organizer`
   - `skill-creator`
@@ -358,6 +368,7 @@ Main pack families:
 - `agent-systems`
 - `sales-marketing`
 - `toc-validation`
+- `social-video-growth`
 - `meta-tools`
 - `archive`
 

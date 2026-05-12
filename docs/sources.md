@@ -156,6 +156,16 @@ This is the current high-level mapping from upstreams into local packs.
 - `launch-strategy` -> `marketingskills`
 - `social-content` -> `marketingskills`
 
+### social-video-growth
+
+- `product-marketing-context` -> `marketingskills`
+- `customer-research` -> `marketingskills`
+- `content-strategy` -> `marketingskills`
+- `social-content` -> `marketingskills`
+- `copywriting` -> `marketingskills`
+- `paid-ads` -> `marketingskills`
+- `launch-strategy` -> `marketingskills`
+
 ### meta-tools
 
 - `file-organizer` -> `antigravity-awesome-skills`

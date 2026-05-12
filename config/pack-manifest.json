@@ -196,6 +196,46 @@
       ]
     },
     {
+      "name": "social-video-growth",
+      "skills": [
+        {
+          "name": "product-marketing-context",
+          "sourceRepo": "marketingskills",
+          "sourcePath": "skills/product-marketing-context"
+        },
+        {
+          "name": "customer-research",
+          "sourceRepo": "marketingskills",
+          "sourcePath": "skills/customer-research"
+        },
+        {
+          "name": "content-strategy",
+          "sourceRepo": "marketingskills",
+          "sourcePath": "skills/content-strategy"
+        },
+        {
+          "name": "social-content",
+          "sourceRepo": "marketingskills",
+          "sourcePath": "skills/social-content"
+        },
+        {
+          "name": "copywriting",
+          "sourceRepo": "marketingskills",
+          "sourcePath": "skills/copywriting"
+        },
+        {
+          "name": "paid-ads",
+          "sourceRepo": "marketingskills",
+          "sourcePath": "skills/paid-ads"
+        },
+        {
+          "name": "launch-strategy",
+          "sourceRepo": "marketingskills",
+          "sourcePath": "skills/launch-strategy"
+        }
+      ]
+    },
+    {
       "name": "meta-tools",
       "skills": [
         {
