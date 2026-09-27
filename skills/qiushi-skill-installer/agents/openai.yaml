@@ -1,0 +1,4 @@
+interface:
+  display_name: "Qiushi Skill Installer"
+  short_description: "Find and install qiushi-skill from its official repository"
+  default_prompt: "Use $qiushi-skill-installer to install qiushi-skill for my current AI tool."
