@@ -96,4 +96,5 @@ Reset-Mocks
 $global:FailPattern = 'reports/unread/'
 Assert-Throws { & $finalize -TaskId $taskId } 'Missing report must prevent finalization.'
 
+$global:LASTEXITCODE = 0
 Write-Output 'Friday Agent Bridge script checks passed.'
