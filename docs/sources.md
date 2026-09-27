@@ -9,6 +9,23 @@ The repository uses a two-layer model:
 
 The current repository strategy assumes most imported skills stay unmodified. Because of that, pack membership is managed through `config/pack-manifest.json`, and selected skill directories are copied from `upstreams/` into `skills/`.
 
+## Standalone Management Skills
+
+### qiushi-skill-installer
+
+- Local path: `skills/qiushi-skill-installer`
+- Canonical external repository: <https://github.com/HughYau/qiushi-skill>
+- Role: discover the official repository and follow its latest host-specific installation, validation, update, or uninstall instructions
+- Exception: this is a locally maintained routing skill, not an imported qiushi method skill and not a generated pack member
+
+### friday-agent-bridge
+
+- Local path: `skills/friday-agent-bridge`
+- Canonical source: `Tencent-LightHouse:/home/ubuntu/friday-data/agent-bridge/codex-skill/friday-agent-bridge`
+- Role: exchange structured tasks and execution reports with Friday through the SSH-based Agent Bridge
+- Exception: this is a server-maintained custom skill, not a tracked public upstream and not a generated pack member
+- Update procedure: refresh the local copy from the canonical server path, review the diff, then run `skillshare sync --force`
+
 ## Rules
 
 - Upstream repositories are discovery and update sources, not the direct sync layer.

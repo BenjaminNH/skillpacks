@@ -74,8 +74,12 @@ skillpacks/
     ├── social-video-growth/
     ├── meta-tools/
     ├── archive/
+    ├── qiushi-skill-installer/
+    ├── friday-agent-bridge/
     └── skillshare/
 ```
+
+`qiushi-skill-installer`, `friday-agent-bridge`, and `skillshare` are standalone management skills. They are not generated packs and are not listed in `config/pack-manifest.json`.
 
 ## How It Is Used
 

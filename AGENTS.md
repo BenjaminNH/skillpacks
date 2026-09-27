@@ -69,8 +69,12 @@ skillpacks/
     ├── social-video-growth/
     ├── meta-tools/
     ├── archive/
+    ├── qiushi-skill-installer/
+    ├── friday-agent-bridge/
     └── skillshare/
 ```
+
+Standalone management skills such as `qiushi-skill-installer`, `friday-agent-bridge`, and `skillshare` live directly under `skills/`. They are intentionally outside `config/pack-manifest.json` and must not be deleted by generated-pack maintenance.
 
 ## Source Of Truth Files
 
