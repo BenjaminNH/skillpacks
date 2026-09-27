@@ -27,9 +27,10 @@ Use the bridge when:
 
 - Friday has asked the computer-side agent to read or execute a task;
 - a completed task, failure, or blocked state must be reported back to Friday;
-- the user asks to synchronize execution status with Friday.
+- the user asks to synchronize execution status with Friday;
+- the computer-side agent has completed useful work, discovered a project state change, or has a report that Friday should review, even when no Friday-created task exists.
 
-Do not use the bridge for ordinary local coding work unless a Friday task exists or the user explicitly asks for a report.
+Do not use the bridge for ordinary local coding work without a reason to synchronize with Friday. A Friday task, an explicit user request, or a meaningful completed-work/project-state report is sufficient reason.
 
 ## Remote paths
 
@@ -103,6 +104,10 @@ After claiming, inspect the task's requested scope, target paths, approval requi
 
 ## Report a result
 
+The bridge is bidirectional. A report may be linked to a claimed task, or it may be a computer-agent-initiated report with no corresponding task file.
+
+For a task-linked report, preserve the task's `task_id` and follow the normal claim/finalize flow. For an agent-initiated report, choose a unique project report ID (for example `ATOUR-YYYYMMDD-NNN`), set `initiated_by: computer_agent` in front matter, and upload the report directly. Do not create or fabricate a task record just to satisfy the report flow, and do not run `Finalize-FridayBridgeTask.ps1` for an agent-initiated report.
+
 Create a local Markdown report named:
 
 ```text
@@ -119,7 +124,7 @@ Use the schema in `references/report-schema.md`. At minimum include:
 - pending user decisions;
 - candidate context updates.
 
-Do not claim completion unless the requested work was actually performed and verified.
+Do not claim completion unless the requested work was actually performed and verified. For an agent-initiated report, describe the completed work or discovered state directly; do not describe it as a claimed task.
 
 Upload safely from Windows PowerShell using the bundled report script:
 
@@ -129,13 +134,15 @@ Upload safely from Windows PowerShell using the bundled report script:
 
 The script validates the task ID and report status in the report's YAML front matter, refuses to overwrite an existing report, uploads through a temporary filename, publishes it exclusively in `reports/unread/`, and verifies that the remote file is nonempty.
 
-After the report is verified, finalize the task with:
+After a task-linked report is verified, finalize the task with:
 
 ```powershell
 .\\scripts\\Finalize-FridayBridgeTask.ps1 -TaskId TASK_ID -FinalState completed
 ```
 
 For an attempted task that failed, use `-FinalState failed`. For `needs_review` or `blocked`, upload the report first and leave the task in `processing` until Friday or the user provides the next decision.
+
+For an agent-initiated report, stop after the remote report is verified. Do not run the finalize script because no task record exists.
 
 ## Status selection
 
