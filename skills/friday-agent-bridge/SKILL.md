@@ -1,6 +1,6 @@
 ---
 name: friday-agent-bridge
-description: Use when receiving, claiming, executing, or reporting tasks through Friday's SSH-based Agent Bridge at Tencent-LightHouse. Keeps Friday as the long-term context owner and Codex as the computer-side executor.
+description: Use when receiving, claiming, executing, or reporting tasks through Friday's SSH-based Agent Bridge at Tencent-LightHouse. Keeps Friday as the long-term context owner and a computer-side Agent as the execution agent.
 ---
 
 # Friday Agent Bridge
@@ -19,7 +19,7 @@ The bridge root on the server is:
 /home/ubuntu/friday-data/agent-bridge
 ```
 
-Friday remains the owner of long-term context. Codex is the execution agent. Do not assume that this bridge grants access to unrelated Friday data.
+Friday remains the owner of long-term context. The computer-side Agent is the execution agent; it may be Codex, Grok Build, or another Agent that can use the required SSH and PowerShell tools. Do not assume that this bridge grants access to unrelated Friday data.
 
 ## Scope
 
